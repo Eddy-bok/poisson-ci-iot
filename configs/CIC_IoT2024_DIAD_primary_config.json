@@ -1,5 +1,5 @@
 {
-    "notebook": "CIC_IoT2024_IDAD_primary.ipynb",
+    "notebook": "CIC_IoT2024_DIAD_primary.ipynb",
     "experiment_type": "primary_evaluation",
     "dataset": "CIC-IoT-DIAD-2024-dataset",
     "dataset_url": "https://www.unb.ca/cic/datasets/iot-diad-2024.html",

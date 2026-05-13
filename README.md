@@ -51,7 +51,7 @@ Python 3.9+ required. Tested on Google Colab (Python 3.10, Ubuntu 22.04).
 
 #### Primary CIC IoT-DIAD 2024 experiments
 
-1. Upload `notebooks/CIC_IoT2024_IDAD_primary.ipynb` to Google Colab
+1. Upload `notebooks/CIC_IoT2024_DIAD_primary.ipynb` to Google Colab
 2. Upload the required CIC IoT-DIAD 2024 CSVs to your Google Drive
 3. Update the dataset path in the configuration cell
 4. Run all cells (Runtime > Run all)
@@ -59,7 +59,7 @@ Python 3.9+ required. Tested on Google Colab (Python 3.10, Ubuntu 22.04).
 
 #### ROC and matched-FPR analysis
 
-1. Upload `notebooks/CIC_IoT2024_IDAD_roc_analysis.ipynb` to Google Colab
+1. Upload `notebooks/CIC_IoT2024_DIAD_roc_analysis.ipynb` to Google Colab
 2. Upload the required CIC IoT-DIAD 2024 CSVs to your Google Drive
 3. Update the dataset path in the configuration cell
 4. Run all cells
@@ -96,8 +96,8 @@ poisson-ci-iot/
 ├── requirements.txt
 │
 ├── configs/
-│   ├── CIC_IoT2024_IDAD_primary_config.json
-│   ├── CIC_IoT2024_IDAD_roc_analysis_config.json
+│   ├── CIC_IoT2024_DIAD_primary_config.json
+│   ├── CIC_IoT2024_DIAD_roc_analysis_config.json
 |   └── CICIoT2023_crossdataset_config.json
 │
 ├── data/                             Local dataset directory (not tracked)
@@ -110,8 +110,8 @@ poisson-ci-iot/
 │   └── evaluation.py                 ROC analysis and evaluation utilities
 │
 ├── notebooks/
-│   ├── CIC_IoT2024_IDAD_primary.ipynb
-│   ├── CIC_IoT2024_IDAD_roc_analysis.ipynb
+│   ├── CIC_IoT2024_DIAD_primary.ipynb
+│   ├── CIC_IoT2024_DIAD_roc_analysis.ipynb
 │   └── CICIoT2023_crossdataset.ipynb
 │
 ├── scripts/
@@ -160,9 +160,9 @@ used for each dataset are provided in `configs/`.
 | Train/Val/Test | 60/20/20 | 60/20/20 |
 
 Configuration summaries:
-- `configs/CIC_IoT2024_IDAD_primary_config.json`
+- `configs/CIC_IoT2024_DIAD_primary_config.json`
 - `configs/CICIoT2023_crossdataset_config.json`
-- `configs/CIC_IoT2024_IDAD_roc_analysis_config.json`
+- `configs/CIC_IoT2024_DIAD_roc_analysis_config.json`
 
 ---
 

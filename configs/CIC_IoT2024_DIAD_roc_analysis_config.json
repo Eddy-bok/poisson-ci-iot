@@ -1,5 +1,5 @@
 {
-    "notebook": "CIC_IoT2024_IDAD_roc_analysis.ipynb",
+    "notebook": "CIC_IoT2024_DIAD_roc_analysis.ipynb",
     "experiment_type": "roc_and_matched_fpr_evaluation",
 
     "dataset": "CIC-IoT-DIAD-2024-dataset",

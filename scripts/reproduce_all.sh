@@ -26,9 +26,9 @@ echo "[1/3] Running CIC IoT-DIAD 2024 primary notebook..."
 
 python -m jupyter nbconvert --to notebook --execute \
     --ExecutePreprocessor.timeout=3600 \
-    notebooks/CIC_IoT2024_IDAD_primary.ipynb \
+    notebooks/CIC_IoT2024_DIAD_primary.ipynb \
     --output-dir=results \
-    --output CIC_IoT2024_IDAD_primary_executed.ipynb
+    --output CIC_IoT2024_DIAD_primary_executed.ipynb
 
 echo "[1/3] Done."
 echo ""
@@ -40,9 +40,9 @@ echo "[2/3] Running ROC analysis notebook..."
 
 python -m jupyter nbconvert --to notebook --execute \
     --ExecutePreprocessor.timeout=3600 \
-    notebooks/CIC_IoT2024_IDAD_roc_analysis.ipynb \
+    notebooks/CIC_IoT2024_DIAD_roc_analysis.ipynb \
     --output-dir=results \
-    --output CIC_IoT2024_IDAD_roc_analysis_executed.ipynb
+    --output CIC_IoT2024_DIAD_roc_analysis_executed.ipynb
 
 echo "[2/3] Done."
 echo ""
