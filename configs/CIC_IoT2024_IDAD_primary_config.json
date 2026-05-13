@@ -1,0 +1,33 @@
+{
+    "notebook": "CIC_IoT2024_IDAD_primary.ipynb",
+    "experiment_type": "primary_evaluation",
+    "dataset": "CIC-IoT-DIAD-2024-dataset",
+    "dataset_url": "https://www.unb.ca/cic/datasets/iot-diad-2024.html",
+    "bin_width_ms": 10,
+    "alpha": 0.05,
+    "kappa_floor": 0.1,
+    "kappa_ceiling": 2.5,
+    "K_neighbors": 50,
+    "random_seed": 42,
+    "train_ratio": 0.6,
+    "val_ratio": 0.2,
+    "test_ratio": 0.2,
+    "benign_file": "BenignTraffic1.csv",
+    "attack_files": {
+        "DoS-TCP":  "DoS-TCP_Flood.csv",
+        "DoS-UDP":  "DoS-UDP_Flood.csv",
+        "DDoS-TCP":  "DDoS-TCP_Flood.csv",
+        "DDoS-ICMP": "DDoS-ICMP_Fragmentation.csv",
+        "Mirai":  "Mirai-greip_flood.csv",
+        "Recon":  "VulnerabilityScan.csv",
+        "WebBased":  "SqlInjection.csv",
+        "BruteForce": "DictionaryBruteForce.csv"
+    },
+    "features": [
+        "event_count", "TCP", "UDP", "ICMP",
+        "log_event", "log_TCP", "log_UDP", "log_ICMP",
+        "total_bytes", "mean_flow_duration", "SYN_count",
+        "IAT_mean", "IAT_std", "IAT_cv", "IAT_mad"
+    ],
+    "target": "log1p_event_count"
+}

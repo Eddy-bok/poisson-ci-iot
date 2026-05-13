@@ -1,0 +1,29 @@
+{
+    "notebook": "CICIoT2023_Crossdataset.ipynb",
+    "experiment_type": "crossdataset_validation",
+    "dataset": "CIC-IoT-attack-dataset-2023",
+    "dataset_url": "https://www.unb.ca/cic/datasets/iotdataset-2023.html",
+    "bin_width_ms": 5,
+    "alpha": 0.05,
+    "kappa_floor": 0.1,
+    "kappa_ceiling": 2.5,
+    "K_neighbors": 50,
+    "random_seed": 42,
+    "train_ratio": 0.6,
+    "val_ratio": 0.2,
+    "test_ratio": 0.2,
+    "benign_file": "BenignTraffic.pcap.csv",
+    "attack_files": {
+        "DDoS-TCP-Flood": "DDoS-TCP_Flood.pcap.csv",
+        "DoS-UDP-Flood": "DoS-UDP_Flood.pcap.csv",
+        "Recon-PortScan": "Recon-PortScan.pcap.csv",
+        "BruteForce-SSH": "DictionaryBruteForce.pcap.csv"
+    },
+    "features": [
+        "event_count", "TCP", "UDP", "ICMP",
+        "log_event", "log_TCP", "log_UDP", "log_ICMP",
+        "total_bytes", "mean_flow_duration", "SYN_count",
+        "IAT_mean", "IAT_std", "IAT_cv", "IAT_mad"
+    ],
+    "target": "log1p_event_count"
+}

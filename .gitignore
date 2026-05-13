@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+venv/
+.env/
+
+# Large temporary outputs
+*.tmp
+
+# Torch checkpoints (if ever generated)
+*.pt
+*.pth
+
+# Local datasets
+data/

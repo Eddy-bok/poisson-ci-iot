@@ -1,0 +1,43 @@
+{
+    "notebook": "CIC_IoT2024_IDAD_roc_analysis.ipynb",
+    "experiment_type": "roc_and_matched_fpr_evaluation",
+
+    "dataset": "CIC-IoT-DIAD-2024-dataset",
+    "dataset_url": "https://www.unb.ca/cic/datasets/iot-diad-2024.html",
+
+    "bin_width_ms": 10,
+
+    "benign_file": "BenignTraffic1.csv",
+
+    "attack_files": {
+        "DoS-TCP":  "DoS-TCP_Flood.csv",
+        "DoS-UDP":  "DoS-UDP_Flood.csv",
+        "DDoS-TCP":  "DDoS-TCP_Flood.csv",
+        "DDoS-ICMP": "DDoS-ICMP_Fragmentation.csv",
+        "Mirai":  "Mirai-greip_flood.csv",
+        "Recon":  "VulnerabilityScan.csv",
+        "WebBased":  "SqlInjection.csv",
+        "BruteForce": "DictionaryBruteForce.csv"
+    },
+
+    "target_fprs": [0.001, 0.005, 0.01, 0.02, 0.05],
+
+    "benchmark_models": [
+        "Poisson-CI",
+        "Poisson-CI-AbsResid",
+        "IsolationForest",
+        "OneClassSVM"
+    ],
+
+    "poisson_settings": {
+        "confidence_level": 0.95,
+        "q": 2,
+        "kappa_floor": 0.1,
+        "kappa_ceiling": 2.5,
+        "lambda_mode": "input_based",
+        "local_lambda_estimation": true,
+        "empirical_calibration": true
+    },
+
+    "random_seed": 42
+}
