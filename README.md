@@ -12,7 +12,7 @@ This repository contains code and configuration files to reproduce all experimen
 
 **Key results reproduced by this package:**
 - AUC = 0.9648 on CIC IoT-DIAD 2024 (primary dataset, 8 attack families)
-- F1 = 0.9708 at matched FPR = 1%, vs 0.1554 for Isolation Forest and 0.1865 for One-Class SVM
+- F1 = 0.9708 at matched FPR = 1%, vs 0.1554 for Isolation Forest and 0.1782 for One-Class SVM
 - Cross-dataset validation on CICIoT2023 (105 devices, 33 attack types) without retraining
 
 ---
@@ -189,7 +189,7 @@ ROC ANALYSIS — CIC IoT-DIAD 2024 (PRIMARY DATASET), 10ms
 Method                    AUC   F1@0.001   F1@0.005   F1@0.01   F1@0.02   F1@0.05
 Poisson-CI             0.9648    0.9643     0.9684    0.9708    0.9726    0.9730
 IsoForest              0.5080    0.1283     0.1474    0.1554    0.1721    0.1970
-OC-SVM                 0.7172    0.1568     0.1722    0.1865    0.2196    0.3200
+OC-SVM                 0.7190    0.1509     0.1650    0.1782    0.2096    0.3043
 ```
 
 Numbers should match within rounding error (±0.001) due to random seed 42.
